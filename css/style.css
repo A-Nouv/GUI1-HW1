@@ -1,0 +1,143 @@
+/*
+Anderson Nouv
+Created: 9/10/22
+File: style.css
+*/
+
+body{
+    background-color: lightsteelblue;
+}
+
+h2{
+    text-align: center;
+}
+
+hr{
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    background-color: black;
+}
+
+/* Positioning of anchor links in navbar*/
+.container{
+    width: 50%;
+    margin:auto;
+    overflow: hidden;
+}
+
+#main-header{
+    background-color:cadetblue;
+    color:#fff;
+}
+
+#main-header h1{
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+
+/* h1:before and h1:after adds in white lines before and after the main header. Looks best in fullscreen*/
+#main-header h1:before{
+    content: "";
+    display: block;
+    width: 725px;
+    height: 2px;
+    background-color: #fff;
+    left: 10px;
+    top: 47px;
+    position: absolute;
+}
+
+#main-header h1:after{
+    content: "";
+    display: block;
+    width: 725px;
+    height: 2px;
+    background-color: #fff;
+    right: 10px;
+    top: 47px;
+    position: absolute;
+}
+
+/* Styling and positioning of the text in navbar */
+#navbar{
+    background-color:#333;
+    color:#fff;
+}
+
+#navbar ul{
+    padding:0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#navbar a:hover{
+    color:red;
+}
+
+#navbar a:active{
+    color:green;
+}
+
+/* Positioning and styling of exercise content */
+#exercise-block{
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+#exercise-block p{
+    font-family: 'Times New Roman';
+    font-size: 18px;
+}
+
+#exercise-block abbr{
+    color: green;
+}
+
+/* Positioning and styling of food content */
+#food-block{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 400px 1fr 600px;
+    gap: 2rem;
+    align-items: center;
+}
+
+#food-block p{
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    max-width: 600px;
+    
+}
+
+#food-breakfast{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 205px 660px 600px;
+}
+
+/* Styling of table and its content */
+table, th, td{
+    border: 1px solid;
+    width: 400px;
+}
+
+/* Positioning of pictures */
+#pictures-block img{
+    padding-top: 20px;
+    padding-left: 20px;
+}
